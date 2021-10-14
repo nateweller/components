@@ -5,7 +5,7 @@ function Input(props) {
 
     const { 
         as,
-        autoComplete = false,
+        autoComplete,
         className = '',
         description, 
         label, 
@@ -66,7 +66,7 @@ function Input(props) {
 
 Input.propTypes = {
     as: PropTypes.oneOfType([PropTypes.element, PropTypes.string]),
-    autoComplete: PropTypes.bool,
+    autoComplete: PropTypes.string,
     className: PropTypes.string,
     description: PropTypes.string,
     label: PropTypes.string,
